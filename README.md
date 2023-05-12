@@ -120,7 +120,23 @@ static class Program
     }
 }
 ```
- 
+
+
+
+</br><h3>5. Пример файла конфигурации.</h3>
+```json
+{
+  "AppSettings": {
+    "ConnectionString": "Server=localhost;Database=mydatabase;User Id=myuser;Password=mypassword;",
+    "SmtpServer": "smtp.gmail.com",
+    "SmtpPort": 587,
+    "SmtpUsername": "myemail@gmail.com",
+    "SmtpPassword": "mypassword",
+    "EmailFromAddress": "myemail@gmail.com",
+    "EmailToAddress": "recipientemail@gmail.com"
+  }
+}
+``` 
  
 </br><h1>Пояснение: </h1>
 Этот код решает проблему управления зависимостями в приложении. В частности, он использует паттерн Dependency Injection (DI), который позволяет легко изменять зависимости приложения, не изменяя его код. 
